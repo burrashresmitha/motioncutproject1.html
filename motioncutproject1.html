@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Landing Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+    }
+    .pricing {
+        display: flex;
+        justify-content: center;
+    }
+    .plan {
+        margin: 0 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .plan h2 {
+        color: #333;
+    }
+    .price {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .currency {
+        font-weight: bold;
+    }
+    .unit-selector {
+        margin-bottom: 20px;
+    }
+    .unit-selector select {
+        padding: 5px;
+        font-size: 16px;
+    }
+    @media screen and (max-width: 600px) {
+        .plan {
+            margin-bottom: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Choose Your Plan</h1>
+    <div class="pricing">
+        <div class="plan">
+            <h2>Basic Plan</h2>
+            <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">10</span>
+            </div>
+            <div class="unit-selector">
+                <label for="basic-unit">Unit:</label>
+                <select id="basic-unit">
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                </select>
+            </div>
+            <button>Select Plan</button>
+        </div>
+        <div class="plan">
+            <h2>Premium Plan</h2>
+            <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">20</span>
+            </div>
+            <div class="unit-selector">
+                <label for="premium-unit">Unit:</label>
+                <select id="premium-unit">
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                </select>
+            </div>
+            <button>Select Plan</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
